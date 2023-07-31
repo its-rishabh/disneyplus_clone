@@ -50,13 +50,11 @@ const Header = (props) => {
                 <Logo>
                     <img src='/images/logo.svg' alt="Disney logo" />
                 </Logo>
-                {
-                    !userName ? (
+                {!userName ? (
                     <Login onClick={handleAuth}>Login</Login>
                     ) : (
                     <>
-
-                     <NavMenu>
+                    <NavMenu>
                     <a href="/home">
                         <img src ="/images/home-icon.svg" alt = 'HOME' />
                         <span>HOME</span>
@@ -195,6 +193,7 @@ const Login = styled.a`
     border: 1px solid #f9f9f9;
     border-radius: 4px;
     transition: all .2ms ease 0s;
+    cursor: pointer;
 
     &:hover {
         background-color: #f9f9f9;
